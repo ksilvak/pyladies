@@ -1,5 +1,6 @@
 from turtle import forward, left, right, exitonclick, penup, pendown, backward
 
+
 for x in range(1):
     penup()
     backward(600)
@@ -50,7 +51,5 @@ for dav in range(10):
     penup()
     forward(100)
     pendown()
-
-
 
 exitonclick()

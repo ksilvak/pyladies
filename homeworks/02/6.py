@@ -1,4 +1,4 @@
-strana = 2852
+a = 2852
 
-print('Povrh krychle o staně', strana, 'je:', 6 * strana ** 2, 'cm2')
-print('Objem krychle o staně', strana, 'je:', strana ** 3, 'cm3')
+print('Povrh krychle o staně', a, 'je:', 6 * a ** 2, 'cm2')
+print('Objem krychle o staně', a, 'je:', a ** 3, 'cm3')

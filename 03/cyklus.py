@@ -1,13 +1,12 @@
-for cislo in range(5):
-    print(cislo)
+for number in range(5):
+    print(number)
 
-for pozdrav in 'Ahoj', 'Hello', 'Hola', 'Hei', 'SYN':
-    print(pozdrav + '!')
+for hello in 'Ahoj', 'Hello', 'Hola', 'Hei', 'SYN':
+    print(hello + '!')
 
+result = 0
 
-soucet = 0
+for number in 8, 45, 9, 21:
+    result = result + number
 
-for cislo in 8, 45, 9, 21:
-    soucet = soucet + cislo
-
-print(soucet)
+print(result)

@@ -1,14 +1,11 @@
-tah_pocitace = 'kámen'
-tah_cloveka = input('kámen, nůžky, nebo papír? ')
+computer = 'kámen'
+human = input('kámen, nůžky, nebo papír? ')
 
-if tah_cloveka == 'kámen' and tah_pocitace == 'kámen' or tah_cloveka == 'nůžky' and tah_pocitace == 'nůžky' or tah_cloveka == 'papír' and tah_pocitace == 'papír':
+if human == 'kámen' and computer == 'kámen' or human == 'nůžky' and computer == 'nůžky' or human == 'papír' and computer == 'papír':
     print('Plichta.')
-elif tah_cloveka == 'kámen' and tah_pocitace == 'nůžky' or tah_cloveka == 'nůžky' and tah_pocitace == 'papír' or tah_cloveka == 'papír' and tah_pocitace == 'kámen':
+elif human == 'kámen' and computer == 'nůžky' or human == 'nůžky' and computer == 'papír' or human == 'papír' and computer == 'kámen':
     print('Vyhrála jsi!')
-elif tah_cloveka == 'kámen' and tah_pocitace == 'papír' or tah_cloveka == 'nůžky' and tah_pocitace == 'kámen' or tah_cloveka == 'papír' and tah_pocitace == 'nůžky':
+elif human == 'kámen' and computer == 'papír' or human == 'nůžky' and computer == 'kámen' or human == 'papír' and computer == 'nůžky':
     print('Počítač vyhrál.')
 else:
     print('Nerozumím.')
-
-
-

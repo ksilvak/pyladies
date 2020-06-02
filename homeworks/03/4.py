@@ -17,7 +17,4 @@ forward(100)
 left(135)
 forward(142)
 
-
-
 exitonclick()
-

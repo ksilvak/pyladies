@@ -1,32 +1,35 @@
 from random import randrange
 
-tah_pocitace = randrange(3)
-kamen = tah_pocitace == 0
-nuzky = tah_pocitace == 1
-papir = tah_pocitace == 2
+computer = randrange(4)
+stone = computer == 0
+scissors = computer == 1
+paper = computer == 2
+spock = computer === 4
 
-tah_cloveka = input('kámen, nůžky, nebo papír? ')
+human = input('kámen, nůžky, nebo papír? ')
 
-if tah_cloveka == 'kámen':
-    if kamen:
+if human == 'kámen':
+    if stone:
         print('Plichta.')
-    elif nuzky:
+    elif scissors:
         print('Vyhrála jsi!')
-    elif papir:
+    elif paper:
         print('Počítač vyhrál.')
-elif tah_cloveka == 'nůžky':
-    if kamen:
+elif human == 'nůžky':
+    if stone:
         print('Počítač vyhrál.')
-    elif nuzky:
+    elif scissors:
         print('Plichta.')
-    elif papir:
+    elif paper:
         print('Vyhrála jsi!')
-elif tah_cloveka == 'papír':
-    if kamen:
+elif human == 'papír':
+    if stone:
         print('Vyhrála jsi!')
-    elif nuzky:
+    elif scissors:
         print('Počítač vyhrál.')
-    elif papir:
+    elif paper:
         print('Plichta.')
+elif: spock:
+    print('Pan Spock tě zdraví')
 else:
     print('Nerozumím.')

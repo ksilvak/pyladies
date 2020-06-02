@@ -1,14 +1,14 @@
-stastna = input('Jsi šťastná?')
-bohata = input('Jsi bohatá?')
+happy = input('Jsi šťastná?')
+rich = input('Jsi bohatá?')
 
-if stastna == 'ano':
+if happy == 'ano':
 
-	if bohata == 'ano':
+	if rich == 'ano':
 		print('Gratulujeme')
 	else:
 		print('Neutrácej tak')
 else:
-	if bohata == 'ano':
+	if rich == 'ano':
 		print('Usměj se')
 	else:
 		print('To je mi líto')
