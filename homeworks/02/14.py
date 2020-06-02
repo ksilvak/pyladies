@@ -1,4 +1,3 @@
-
 password = input('Zadejte heslo: ')
 
 if password == 'Žer slimáky':
@@ -8,6 +7,6 @@ else:
 
 if correct:
     print('Při úplňku se parkem prochází jednorožec')
-    
+
 else:
      print('Za tvou drzost tě stihne krutá kletba!!')

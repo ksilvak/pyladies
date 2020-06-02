@@ -1,4 +1,4 @@
 from random import randrange
 
-cislo = randrange(3)
-print(cislo)
+number = randrange(3)
+print(number)

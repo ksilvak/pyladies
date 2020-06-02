@@ -1,14 +1,13 @@
 string = input('Zadej původní řetězec: ')
-pozice = int(input('Na jaké pozici bude výměna? '))
-znak = input('Jaký znak tam bude? ')
+position = int(input('Na jaké pozici bude výměna? '))
+x = input('Jaký x tam bude? ')
 
 print('Po výměně je takovýto výsledek:')
 
-print(string[:pozice] + znak + string[pozice + 1:])
+print(string[:position] + x + string[position + 1:])
 
 
-jmeno = input('Zadejte jmeno:')
-prijmeni = input('Zadejte příjmnení:')
+firstName = input('Zadejte jmeno:')
+secondName = input('Zadejte příjmnení:')
 
-print(jmeno[0].upper(), prijmeni[0].upper())
-
+print(firstName[0].upper(), secondName[0].upper())

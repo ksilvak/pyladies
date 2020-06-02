@@ -8,9 +8,9 @@ while result < 21:
     answer = input('Otočit kartu?')
 
     if answer == 'ano':
-       card = randrange(2,11)
-       print('Otočila jsi:', card)
-       result = result + card
+       karta = randrange(2,11)
+       print('Otočila jsi:', karta)
+       result = result + karta
 
     elif answer == 'ne':
         break

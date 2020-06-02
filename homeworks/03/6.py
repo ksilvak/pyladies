@@ -3,8 +3,8 @@ from turtle import forward, left, right, exitonclick, penup, pendown, backward
 
 for i in range(5):
     forward(50)
-    left(72) 
-    
+    left(72)
+
 penup()
 forward(100)
 pendown()
