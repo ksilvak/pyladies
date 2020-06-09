@@ -7,21 +7,16 @@ if  key.isalpha() or int(key) < 0:
     key = input('Zadejte kladné číslo: ')
 
 if key.isdigit():
-    def caesar(plainText, key):
-        cipherText = ""
-        for i in plainText:
-            if i.isalpha():
-                text = ord(i) + int(key)
-                if text > ord('z'):
-                    text -= 26
-            else:
-                text = ord(i)
-        
-            finalLetter = chr(text)
-            cipherText += finalLetter
+    cipherText = ""
+    for i in plainText:
+        if i.isalpha():
+            text = ord(i) + int(key)
+            if text > ord('z'):
+                text -= 26
+        else:
+            text = ord(i)
 
-        print("Your ciphertext is: ", cipherText)
-        
-        return cipherText
+        finalLetter = chr(text)
+        cipherText += finalLetter
 
-    caesar(plainText, key)
+    print("Your ciphertext is: ", cipherText)
