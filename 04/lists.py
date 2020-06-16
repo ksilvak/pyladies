@@ -89,7 +89,7 @@ print('D' in song)
 list1 = []
 if list1:
     print('V seznamu něco je!')
-else: 
+else:
     print('Seznam je prázdný!')
 
 ## list()
@@ -111,7 +111,7 @@ a.append(4)
 print(b) ## b zůstane [1, 2, 3]
 
     ## prázný list a pak ho naplnit pomocí append
- 
+
 power_two = []
 for number in range(10):
     power_two.append(2 ** number)
