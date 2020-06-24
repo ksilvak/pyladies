@@ -6,12 +6,19 @@ animals = {
 }
 
 new_pair = dict(animals)
-for k in new_pair:
-    new_pair['Wingy'] = 'good cat'
-    new_pair[k] = 'good ' + new_pair[k]
+for k, v in new_pair.items():
+    new = 'good ' + v
+    new_pair['Wingy'] = 'cat'
 
-print(new_pair)
+    print('{} is {}'.format(k, new))
 
 del new_pair['Lord']
 
-print(new_pair)
+print('#')
+
+delete_pair = dict(new_pair)
+for k, v in new_pair.items():
+    new = 'good ' + v
+    delete_pair['Wingy'] = 'cat'
+
+    print('{} is {}'.format(k, new))
