@@ -1,5 +1,6 @@
 import random
 
+
 def computer_move(game_area):
 	while True:
 		position = random.randrange(0, 19)

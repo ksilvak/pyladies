@@ -1,5 +1,5 @@
 import pytest
-from FiveInRow import evaluate, move, player_move, game1d
+from piskvorky import evaluate, move, player_move, game1d
 from ai import computer_move
 
 def test_evaluate_win_x():
