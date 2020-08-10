@@ -1,41 +1,39 @@
-import json 
-from flask import url_for
 from flask import Flask
+from flask import url_for
 from flask import render_template
+import json
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
 
-filename = 'data.txt'
-dict1 = {} 
-  
-with open(filename) as fh: 
-    for line in fh: 
-        command, description = line.strip().split(None, 1) 
-  
-        dict1[command] = description.strip() 
 
+json_string = """ {
+    "name": "Silva",
+    "town": "Brno",
+    "language": "Javascript"
+}
+"""
 
-out_file = open("data.json", "w") 
-json.dump(dict1, out_file, indent = 4, sort_keys = False) 
-out_file.close() 
-
-
-string_json= json.dumps(dict1) 
-
-print(string_json)
+data = json.loads(json_string)
 
 @app.route('/')
-@app.route('/users/')
-@app.route('/users/<username>/')
-def profile(username = 'Silva'):
-    return 'Jmenuji se {}'.format(username)
+def index():
+  return render_template('index.html')
 
-@app.route('/hello/')
-@app.route('/hello/<name>/')
-def hello(name=None):
+@app.route('/user/')
+@app.route('/user/<name>/')
+def user_name(name=data['name']):
     return render_template('index.html', name=name)
 
-    
+@app.route('/language/')
+@app.route('/language/<language>/')
+def user_language(language=data['language']):
+    return render_template('index.html', language=language)
+
+@app.route('/town/')
+@app.route('/town/<town>/')
+def user_town(town=data['town']):
+    return render_template('index.html', town=town)
+
 if __name__ == "__main__":
     app.run()
