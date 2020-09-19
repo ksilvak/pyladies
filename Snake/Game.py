@@ -3,13 +3,21 @@ from MessageBox import message_box
 from Snack import randomSnack
 from Snake import snake
 import pygame
+import pygame.freetype
 
+
+pygame.init()
 
 def redrawWindow(surface):
 	global rows, width, s, snack
 	surface.fill((0, 0, 0))
 	s.draw(surface)
 	snack.draw(surface)
+	score = 'Score: {}'.format(len(s.body))
+	font = pygame.freetype.SysFont('Arial Black', 30)
+	text_surf, text_rect = font.render(str(score), (232, 173, 12), size=30)
+	text_pos = (10, 10)
+	surface.blit(text_surf, text_pos)
 	pygame.display.update()
 
 def main():
