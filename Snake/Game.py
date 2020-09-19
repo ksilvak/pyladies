@@ -4,23 +4,12 @@ from Snack import randomSnack
 from Snake import snake
 import pygame
 
-def drawGrid(w, rows, surface):
-	sizeBtwn = w // rows # mezera mezi kostkami
-	x = 0
-	y = 0
-	for l in range(rows):
-		x = x + sizeBtwn
-		y = y + sizeBtwn
-
-		pygame.draw.line(surface, (168, 168, 168), (x, 0), (x, w)) # vertikální řádek
-		pygame.draw.line(surface, (168, 168, 168), (0, y), (w, y)) # horizontální řádek
 
 def redrawWindow(surface):
 	global rows, width, s, snack
 	surface.fill((0, 0, 0))
 	s.draw(surface)
 	snack.draw(surface)
-	drawGrid(width,rows, surface)
 	pygame.display.update()
 
 def main():
