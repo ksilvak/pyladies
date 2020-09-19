@@ -2,7 +2,7 @@ from move import move
 import random
 
 
-words = random.choice(["koniklec", "unicorn", "lepricon"])
+words = random.choice(["deka", "lano", "lepricon"])
 attempts = []
 used_letters = []
 
@@ -17,5 +17,6 @@ def game():
 			pole = move(pole, words, attempts, used_letters)
 			print(pole)
 		else:
-			print ("Výhra")
+			print("Výhra")
+			print("Tvoje slovo bylo: {}".format(words))
 			break

@@ -23,13 +23,11 @@ def is_number(position):
 		return 'Zadejte číslo'
 
 def player_move(game_area):
-	number = input("Zadejte pozici umístění symbolu (0 - 19): ")
-	is_number(number)
-
 	while True:
-		position = int(number)
-
-		if position < 0 or position > 19:
+		position = int(input("Zadejte pozici umístění symbolu (0 - 19): "))
+		if isinstance(position, str):
+			'Zadejte číslo'
+		elif position < 0 or position > 19:
 			print("Prosím zadejte číslo v rozmenzí 0 - 19.")
 		elif game_area[position] != "-":
 			print("Pole {} je obsazené, zkus to znovu.".format(position))
